@@ -44,7 +44,8 @@ https://templatemo.com/tm-578-first-portfolio
 
 body {
     background: var(--section-bg-color);
-    font-family: var(--body-font-family); 
+    font-family: var(--body-font-family);
+    width: 1920px; 
 }
 
 
