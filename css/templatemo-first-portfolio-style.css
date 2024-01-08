@@ -12,13 +12,14 @@ https://templatemo.com/tm-578-first-portfolio
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #535da1;
+  --primary-color:                #870834;
   --secondary-color:              #14B789;
-  --section-bg-color:             #f9f9f9;
+  --section-bg-color:             #151415;
   --dark-color:                   #000000;
-  --p-color:                      #717275;
+  --p-color:                      #79807e;
+  --p2-color:                      #212323;
   --border-color:                 #e9eaeb;
-  --featured-border-color:        #727aab;
+  --featured-border-color:        #444a48;
 
   --body-font-family:             'DM Sans', sans-serif;
 
@@ -42,7 +43,7 @@ https://templatemo.com/tm-578-first-portfolio
 }
 
 body {
-    background: var(--white-color);
+    background: var(--section-bg-color);
     font-family: var(--body-font-family); 
 }
 
@@ -56,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--dark-color);
+  color: var(--white-color);
 }
 
 h1,
@@ -145,7 +146,7 @@ strong {
 }
 
 .section-title-wrap {
-  background: var(--secondary-color);
+  background: var(--p2-color);
   border-radius: var(--border-radius-small);
   padding: 10px 30px;
 }
@@ -367,7 +368,7 @@ strong {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--section-bg-color);
+  color: var(--white-color);
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
@@ -634,7 +635,7 @@ strong {
 }
 
 .services-thumb {
-  background: var(--white-color);
+  background: var(--p2-color);
   border: 2px solid transparent;
   border-radius: var(--border-radius-medium);
   position: relative;
@@ -718,7 +719,7 @@ strong {
   PROJECTS              
 -----------------------------------------*/
 .projects-thumb {
-  background: var(--section-bg-color);
+  background: var(--p2-color);
   border: 2px solid var(--white-color);
   border-radius: var(--border-radius-medium);
   position: relative;
