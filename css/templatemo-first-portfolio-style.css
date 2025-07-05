@@ -52,6 +52,8 @@ body {
 
 
 
+
+
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -70,36 +72,51 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--body-font-family);
   font-weight: var(--font-weight-bold);
-  letter-spacing: -1px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 h1 {
   font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
   letter-spacing: -3px;
 }
 
 h2 {
   font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-bold);
   color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   letter-spacing: -3px;
 }
 
 h3 {
   font-size: var(--h3-font-size);
+  font-weight: var(--font-weight-bold);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
   font-size: var(--h4-font-size);
+  font-weight: var(--font-weight-bold);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 h5 {
   font-size: var(--h5-font-size);
   line-height: normal;
+  font-weight: var(--font-weight-bold);
 }
 
 h6 {
   font-size: var(--h6-font-size);
+  font-weight: var(--font-weight-bold);
 }
 
 p {
@@ -358,6 +375,12 @@ strong {
 .navbar-brand {
   font-size: var(--h4-font-size);
   font-weight: var(--font-weight-bold);
+}
+
+.navbar-logo {
+  max-height: 40px;
+  width: auto;
+  display: block;
 }
 
 .navbar-brand,
@@ -1633,4 +1656,88 @@ html, body {
       transform: translateY(-1px);
     }
   }
+}
+
+/* Project Link Styling */
+.project-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-5px);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 183, 137, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-btn {
+  color: var(--white-color);
+  font-weight: var(--font-weight-medium);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border: 2px solid var(--white-color);
+  border-radius: var(--border-radius-small);
+  transition: all 0.3s ease;
+}
+
+.project-link:hover .project-btn {
+  background: var(--white-color);
+  color: var(--secondary-color);
+}
+
+/* Enhanced Mobile Experience */
+
+/* SecureSpectra page specific styles */
+.securespectra-page .lead {
+  font-family: var(--body-font-family);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--p-color);
+}
+
+.securespectra-page .subtitle {
+  font-family: var(--body-font-family);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.securespectra-page .section-subtitle {
+  font-family: var(--body-font-family);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--p-color);
+  margin-bottom: 1.5rem;
+  border-left: 3px solid var(--secondary-color);
+  padding-left: 1rem;
+}
+
+.securespectra-page h3,
+.securespectra-page h4 {
+  color: var(--dark-color);
 }

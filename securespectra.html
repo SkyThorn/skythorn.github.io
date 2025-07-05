@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SecureSpectra: Cryptographically Grounded Defenses Against DeepFake Audio - SkyThorn AI Labs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SecureSpectra: Advanced cryptographic defenses against deepfake audio threats. Protect voice authenticity with spectral analysis technology.">
+  
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+</head>
+<body class="securespectra-page">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        SkyThorn AI Labs
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="index.html#section_2">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="index.html#section_3">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="index.html#section_4">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll" href="index.html#section_5">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" style="background: linear-gradient(135deg, rgba(21, 20, 21, 0.9) 0%, rgba(33, 35, 35, 0.9) 100%), url('images/projects/securespectra.png') center center/cover no-repeat; min-height: 60vh; display: flex; align-items: center;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-12 mx-auto">
+          <div class="hero-section-text text-center">
+            <h1 class="text-white mb-4">SecureSpectra</h1>
+            <h3 class="text-white mb-4">Cryptographically Grounded Defenses Against DeepFake Audio</h3>
+            <p class="text-white-50 mb-4">Protecting voice authenticity through advanced spectral analysis and cryptographic signatures</p>
+            <div class="d-flex justify-content-center">
+              <a href="#overview" class="custom-btn custom-border-btn btn me-3">Learn More</a>
+              <a href="index.html" class="custom-btn btn">Back to Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section-padding" id="overview">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-12 mx-auto">
+          
+          <!-- Problem Statement -->
+          <div class="mb-5">
+            <div class="subtitle">The Challenge</div>
+            <h2 class="mb-4">What if the voice you trust… isn't real?</h2>
+            <div class="section-subtitle">A critical examination of voice authenticity in the age of synthetic media</div>
+            <div class="alert alert-warning" role="alert">
+              <strong>Real Scenario:</strong> A mother receives a frantic phone call: "Mom, I've been in an accident—please don't hang up." It sounds exactly like her child. Same accent. Same tone. But it's not. It's a generative voice model trained on old social media clips. She transfers money. The voice goes silent.
+            </div>
+            <p class="lead">In a world where synthetic voices are indistinguishable from real ones, voice no longer means trust. In fact, the very thing we associate with authenticity—tone, cadence, presence—has become a new attack surface.</p>
+          </div>
+
+          <!-- Solution -->
+          <div class="mb-5">
+            <div class="subtitle">Our Innovation</div>
+            <h2 class="mb-4">Our Solution: SecureSpectra</h2>
+            <div class="section-subtitle">Cryptographically grounded defenses against deepfake audio threats</div>
+            <p>At SkyThorn Labs, we asked: What if trust could be embedded in the waveform itself? What if we could turn every voice into its own proof of origin?</p>
+            <p>Our answer is <strong>SecureSpectra</strong>.</p>
+          </div>
+
+          <!-- Why We Built It -->
+          <div class="mb-5">
+            <div class="subtitle">Motivation</div>
+            <h2 class="mb-4">Why We Built SecureSpectra</h2>
+            <div class="section-subtitle">Addressing the urgent need for voice authenticity verification</div>
+            <p>SecureSpectra was born out of our frustration watching public figures be impersonated with impunity. But the threat isn't limited to celebrities or politicians. It's deeply personal. Our voices—those of our parents, partners, children—can now be cloned and used against us.</p>
+            <blockquote class="blockquote bg-light p-4 rounded">
+              <p class="mb-0">"It wasn't just the political DeepFakes that worried us—it was the realization that anyone with a voice could be cloned, manipulated, and used against the people who love or trust them. We didn't want to detect fakes after the damage—we wanted to make them impossible to trust in the first place."</p>
+              <footer class="blockquote-footer mt-2"><strong>Oguzhan Baser, Founder, SkyThorn Labs</strong></footer>
+            </blockquote>
+            <p>We're not just detecting DeepFakes—we're future-proofing voice itself.</p>
+          </div>
+
+          <!-- System Overview -->
+          <div class="mb-5">
+            <div class="subtitle">Architecture</div>
+            <h2 class="mb-4">SecureSpectra: System Overview</h2>
+            <div class="section-subtitle">A three-module approach to voice authenticity verification</div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">1. Signature Module (Private)</h5>
+                    <ul class="card-text">
+                      <li>U-Net-based spectral encoder embeds user-specific private keys into imperceptible high-frequency perturbations.</li>
+                      <li>Signed audio remains natural to human listeners and is resistant to cloning.</li>
+                      <li>Private keys are protected via Differential Privacy to defend against insider threats.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">2. Verification Module (Public)</h5>
+                    <ul class="card-text">
+                      <li>A 7-layer CNN audits the presence of valid signatures without revealing keys.</li>
+                      <li>Ensures identity-preserving verification without exposing user secrets.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">3. DeepFake Threat Simulation</h5>
+                    <ul class="card-text">
+                      <li>Evaluated against Coqui.ai TTS, OpenVoice, and WhisperSpeech.</li>
+                      <li>DeepFake models structurally fail to replicate cryptographic high-frequency signatures.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scenario Walkthrough -->
+          <div class="mb-5">
+            <div class="subtitle">Case Study</div>
+            <h2 class="mb-4">Scenario Walkthrough: DeepFake Attack vs. SecureSpectra</h2>
+            <div class="section-subtitle">Real-world application demonstrating the effectiveness of our solution</div>
+            <div class="bg-light p-4 rounded">
+              <p>A public figure, Dr. Huberman, releases a podcast episode advocating for climate resilience. Hours later, a manipulated version of her voice circulates, stating a completely opposite position—fabricated using a DeepFake tool trained on her public recordings.</p>
+              <p>The misinformation spreads rapidly. But the original podcast was cryptographically signed with Dr. Huberman's private key. The cloned audio, lacking this signature, is quickly flagged as inauthentic by verification services.</p>
+              <ul>
+                <li>Journalists verify authenticity instantly.</li>
+                <li>Social platforms downrank fake content.</li>
+                <li>Listeners regain confidence in the source.</li>
+              </ul>
+              <p><strong>SecureSpectra didn't just detect the clone—it made the original undoubtable.</strong></p>
+            </div>
+          </div>
+
+          <!-- Use Cases -->
+          <div class="mb-5">
+            <div class="subtitle">Applications</div>
+            <h2 class="mb-4">Multi-Domain Use Cases</h2>
+            <div class="section-subtitle">Comprehensive coverage across critical sectors and industries</div>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Banking & FinTech</strong> – Authenticate voice commands on banking lines.</li>
+                  <li class="list-group-item"><strong>Broadcast & Media</strong> – Certify origin of interviews and reports.</li>
+                  <li class="list-group-item"><strong>Law Enforcement & Forensics</strong> – Verify that audio evidence is untampered.</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Mobile Assistants & IoT</strong> – Protect against adversarial voice inputs.</li>
+                  <li class="list-group-item"><strong>Healthcare & Therapy</strong> – Secure voice-based diagnostics and sessions.</li>
+                  <li class="list-group-item"><strong>Military & Government</strong> – Authenticate communications in sensitive operations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engineering Details -->
+          <div class="mb-5">
+            <div class="subtitle">Technical Approach</div>
+            <h2 class="mb-4">Engineering the Signature: Exploiting Frequency Blindness</h2>
+            <div class="section-subtitle">Leveraging the limitations of deepfake models for robust authentication</div>
+            <p>DeepFake audio models ignore high-frequency bands. SecureSpectra exploits this by embedding imperceptible signatures in these regions, which DeepFakes fail to replicate.</p>
+            <ul>
+              <li>Signatures survive compression, playback, and re-encoding.</li>
+              <li>They cannot be removed or reproduced by generative models.</li>
+            </ul>
+          </div>
+
+          <!-- Benchmarking -->
+          <div class="mb-5">
+            <div class="subtitle">Performance Analysis</div>
+            <h2 class="mb-4">Benchmarking: A New Standard for Robust Audio Integrity</h2>
+            <div class="section-subtitle">Empirical validation against state-of-the-art deepfake detection methods</div>
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Model</th>
+                    <th>EER (CommonVoice)</th>
+                    <th>EER (LibriSpeech)</th>
+                    <th>EER (VoxCeleb)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Whisper-Based (2023)</td>
+                    <td>41.6%</td>
+                    <td>36.2%</td>
+                    <td>36.8%</td>
+                  </tr>
+                  <tr>
+                    <td>SASV2-Net</td>
+                    <td>4.01%</td>
+                    <td>12.2%</td>
+                    <td>3.75%</td>
+                  </tr>
+                  <tr class="table-success">
+                    <td><strong>SecureSpectra</strong></td>
+                    <td><strong>1.50%</strong></td>
+                    <td><strong>1.10%</strong></td>
+                    <td><strong>1.36%</strong></td>
+                  </tr>
+                  <tr>
+                    <td>+ DP Noise</td>
+                    <td>2.96%</td>
+                    <td>2.74%</td>
+                    <td>2.83%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Privacy -->
+          <div class="mb-5">
+            <div class="subtitle">Privacy & Compliance</div>
+            <h2 class="mb-4">Privacy-Aware By Design</h2>
+            <div class="section-subtitle">Ensuring user privacy while maintaining robust authentication</div>
+            <p>SecureSpectra integrates Differential Privacy into key generation to prevent leakage and guarantee compliance with GDPR and AI safety standards.</p>
+          </div>
+
+          <!-- Future Vision -->
+          <div class="mb-5">
+            <div class="subtitle">Future Roadmap</div>
+            <h2 class="mb-4">Where We're Going: Beyond a Product, Toward a Protocol</h2>
+            <div class="section-subtitle">Envisioning a comprehensive ecosystem for verifiable audio authenticity</div>
+            <p>SecureSpectra is the foundation for a verifiable audio future:</p>
+            <ul>
+              <li>A protocol for voice and media provenance across platforms.</li>
+              <li>Plug-ins for TTS, dubbing, conferencing, and voice assistants.</li>
+              <li>Compliance frameworks for elections, journalism, and digital forensics.</li>
+              <li>SDKs and APIs for developers and enterprises.</li>
+            </ul>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="text-center mb-5">
+            <div class="subtitle">Get Started</div>
+            <h2 class="mb-4">Secure by Signature. Powered by Science.</h2>
+            <div class="section-subtitle">Join us in building a future where every voice can be trusted</div>
+            <p class="lead mb-4">At SkyThorn Labs, we envision a world where every media object is verifiably authentic. If you're building systems in security, media, finance, or defense—let's work together.</p>
+            <a href="index.html#section_5" class="custom-btn btn me-3">Contact Us</a>
+            <a href="index.html" class="custom-btn custom-border-btn btn">Back to Home</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-12">
+          <div class="copyright-text-wrap">
+            <p class="mb-0">
+              <span class="copyright-text">Copyright © 2025 <a href="#">SkyThorn AI Labs</a> Company. All rights reserved.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/click-scroll.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/magnific-popup-options.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+</html>
