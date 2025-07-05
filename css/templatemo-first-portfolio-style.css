@@ -45,8 +45,11 @@ https://templatemo.com/tm-578-first-portfolio
 body {
     background: var(--section-bg-color);
     font-family: var(--body-font-family);
-    width: 1920px; 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
 
 
 /*---------------------------------------
@@ -1187,3 +1190,10 @@ strong {
   }
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
