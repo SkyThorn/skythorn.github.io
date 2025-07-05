@@ -4,9 +4,14 @@
   "use strict";
 
     // PRE LOADER
-    $(window).load(function(){
+    $(window).on('load', function(){
       $('.preloader').fadeOut(1000); // set duration in brackets    
     });
+    
+    // Fallback for preloader if load event doesn't fire
+    setTimeout(function(){
+      $('.preloader').fadeOut(1000);
+    }, 3000);
 
     // CUSTOM LINK
     $('.custom-link').click(function(){

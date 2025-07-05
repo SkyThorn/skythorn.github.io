@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <!-- Security Headers -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
         <meta http-equiv="X-Content-Type-Options" content="nosniff">
         <meta http-equiv="X-Frame-Options" content="DENY">
         <meta http-equiv="X-XSS-Protection" content="1; mode=block">
@@ -39,7 +39,7 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
         <!-- Local CSS with integrity checks -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
         <link href="css/magnific-popup.css" rel="stylesheet">
         <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
@@ -129,7 +129,7 @@
             <section class="d-flex justify-content-center align-items-center" id="section_1">
 
                 <div id="video-container">
-                    <video autoplay loop muted playsinline>
+                    <video autoplay loop muted playsinline preload="metadata">
                         <source src="images/TheMeeting.mp4" type="video/mp4">
                         The Meeting by Pak
                     </video>  
@@ -563,16 +563,19 @@
         </footer>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8CgWY/GI0DjlKWlkMh0+38q9/d4T" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/custom.js"></script>
+        <!-- Security scripts -->
         <script src="js/security.js"></script>
-        <script src="js/security-monitor.js"></script>
-        <script src="js/security-test.js"></script>
+        <!-- <script src="js/security-monitor.js"></script> -->
+        <!-- <script src="js/security-test.js"></script> -->
+        
+
 
     </body>
 </html>
