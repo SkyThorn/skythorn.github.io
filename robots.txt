@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Disallow access to sensitive directories and files
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /.git/
+Disallow: /README.md
+Disallow: /LICENSE
+
+# Allow access to main content
+Allow: /index.html
+Allow: /images/
+Allow: /CNAME
+
+# Sitemap location
+Sitemap: https://skythornlabs.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1 
