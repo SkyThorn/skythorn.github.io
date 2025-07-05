@@ -2029,3 +2029,184 @@ html, body {
 .wavshape-page .hero-section p {
   letter-spacing: 0.02em !important;
 }
+
+/* TrustShield page specific styles */
+.trustshield-page .lead {
+  font-family: var(--body-font-family);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--p-color);
+}
+
+.trustshield-page .subtitle {
+  font-family: var(--body-font-family);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.trustshield-page .section-subtitle {
+  font-family: var(--body-font-family);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--p-color);
+  margin-bottom: 1.5rem;
+  border-left: 3px solid var(--secondary-color);
+  padding-left: 1rem;
+}
+
+.trustshield-page h3,
+.trustshield-page h4 {
+  color: var(--dark-color) !important;
+  background-color: #ffffff !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 5px !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  display: inline-block !important;
+}
+
+.trustshield-page .card-title {
+  color: var(--dark-color) !important;
+  font-weight: 600 !important;
+}
+
+.trustshield-page .card {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.trustshield-page .card-body {
+  color: var(--dark-color) !important;
+}
+
+.trustshield-page .card-text {
+  color: var(--dark-color) !important;
+}
+
+.trustshield-page .list-group-item {
+  color: var(--dark-color) !important;
+  background-color: #f8f9fa !important;
+  border-color: rgba(0, 0, 0, 0.125) !important;
+}
+
+.trustshield-page .list-group-item:hover {
+  background-color: #e9ecef !important;
+}
+
+.trustshield-page .table {
+  color: var(--dark-color) !important;
+  background-color: #ffffff !important;
+}
+
+.trustshield-page .table th,
+.trustshield-page .table td {
+  color: var(--dark-color) !important;
+  background-color: #ffffff !important;
+}
+
+.trustshield-page .table-striped > tbody > tr:nth-of-type(odd) > td {
+  background-color: #f8f9fa !important;
+}
+
+.trustshield-page .table-striped > tbody > tr:nth-of-type(even) > td {
+  background-color: #ffffff !important;
+}
+
+.trustshield-page .table-dark {
+  background-color: #343a40 !important;
+}
+
+.trustshield-page .table-dark th {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+}
+
+.trustshield-page .table-success {
+  background-color: #d4edda !important;
+}
+
+.trustshield-page .table-success td {
+  background-color: #d4edda !important;
+  color: var(--dark-color) !important;
+}
+
+.trustshield-page .alert {
+  color: var(--dark-color) !important;
+}
+
+.trustshield-page .blockquote {
+  color: var(--dark-color) !important;
+}
+
+.trustshield-page .blockquote-footer {
+  color: var(--dark-color) !important;
+}
+
+/* Mobile-specific fixes for TrustShield page */
+@media (max-width: 768px) {
+  .trustshield-page .hero-section {
+    padding-top: 100px !important;
+    min-height: 70vh !important;
+  }
+  
+  .trustshield-page .hero-section h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 1rem !important;
+    letter-spacing: 0.05em !important;
+  }
+  
+  .trustshield-page .hero-section h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+    letter-spacing: 0.03em !important;
+  }
+  
+  .trustshield-page .hero-section p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+    letter-spacing: 0.02em !important;
+  }
+  
+  .trustshield-page .hero-section .d-flex {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  .trustshield-page .hero-section .btn {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* Improved letter spacing for all titles on TrustShield page */
+.trustshield-page h1 {
+  letter-spacing: 0.05em !important;
+}
+
+.trustshield-page h2 {
+  letter-spacing: 0.03em !important;
+}
+
+.trustshield-page h3 {
+  letter-spacing: 0.02em !important;
+}
+
+.trustshield-page h4 {
+  letter-spacing: 0.01em !important;
+}
+
+.trustshield-page .hero-section h1 {
+  letter-spacing: 0.08em !important;
+}
+
+.trustshield-page .hero-section h3 {
+  letter-spacing: 0.04em !important;
+}
+
+.trustshield-page .hero-section p {
+  letter-spacing: 0.02em !important;
+}

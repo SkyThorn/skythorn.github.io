@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustShield: A New Standard for Secure Federated Learning - SkyThorn AI Labs</title>
+    
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/templatemo-first-portfolio-style.css">
+</head>
+
+<body class="trustshield-page">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                SkyThorn Labs
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#section_3">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#section_5">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, rgba(21, 20, 21, 0.9) 0%, rgba(33, 35, 35, 0.9) 100%), url('images/projects/trustshield.jpg') center center/cover no-repeat; min-height: 60vh; display: flex; align-items: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12 mx-auto">
+                    <div class="hero-section-text text-center">
+                        <h1 class="text-white mb-4">TrustShield: A New Standard for Secure Federated Learning</h1>
+                        <p class="text-white-50 mb-4">How SkyThorn AI Labs Is Building Trust into the Future of Decentralized Intelligence</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#content" class="custom-btn custom-border-btn btn me-3">Read More</a>
+                            <a href="index.html" class="custom-btn btn">Back to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="section-padding" id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    
+                    <!-- What Happens When Privacy Backfires -->
+                    <div class="mb-5">
+                        <div class="subtitle">The Problem</div>
+                        <h2 class="mb-4">What Happens When Privacy Backfires?</h2>
+                        <div class="section-subtitle">The hidden risks in federated learning systems</div>
+                        <blockquote class="blockquote bg-light p-4 rounded">
+                            <p class="mb-0">"We built TrustShield not in theory, but in response to what we saw unfolding in real systems. One moment your AI model is private and secure; the next, it's auto-suggesting hate speech or misdiagnosing patients. That's when we realized privacy without trust isn't enough."<br><br>
+                            — Oguzhan Baser, Founder of SkyThorn AI Labs</p>
+                        </blockquote>
+                        <p class="lead">In 2024, a leading AI-powered keyboard app noticed something strange. After a routine federated update, it began auto-suggesting phrases that leaned politically extreme and emotionally charged. The model had been poisoned—not through a network hack, but by a small subset of users training it with biased text. Because the data was private, no one saw it coming.</p>
+                        <p>This wasn't an isolated case. From hospitals to legal firms to student mental health platforms, decentralized AI training is now the norm—but it comes with an invisible risk: <strong>federated poisoning</strong>.</p>
+                    </div>
+
+                    <!-- Why This Matters Now -->
+                    <div class="mb-5">
+                        <div class="subtitle">Context</div>
+                        <h2 class="mb-4">Why This Matters Now</h2>
+                        <div class="section-subtitle">The AI ecosystem is shifting fast</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>LLMs</strong> are moving to the edge, powering on-device assistants and specialized chatbots</li>
+                                    <li class="list-group-item"><strong>Regulations</strong> like the EU AI Act and GDPR make centralized data storage costly and legally risky</li>
+                                    <li class="list-group-item"><strong>Privacy-first training</strong> (like federated learning) is becoming the new standard</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="alert alert-warning" role="alert">
+                                    <strong>But while these trends preserve privacy, they also reduce visibility.</strong> Bad actors can exploit this blind spot, silently injecting poisoned data that biases, breaks, or backdoors global models.
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lead">This is where <strong>TrustShield</strong> steps in.</p>
+                    </div>
+
+                    <!-- The Hidden Vulnerability -->
+                    <div class="mb-5">
+                        <div class="subtitle">Technical Background</div>
+                        <h2 class="mb-4">The Hidden Vulnerability in Federated Learning</h2>
+                        <div class="section-subtitle">Understanding the core security flaw</div>
+                        <p>Federated Learning (FL) was born out of a noble promise: to train machine learning models collaboratively without ever sharing raw data. It gained traction across industries—from healthcare and finance to edge AI—by preserving privacy through decentralization.</p>
+                        <div class="alert alert-danger" role="alert">
+                            <strong>But privacy isn't the same as security.</strong> In fact, FL's core privacy guarantees can hide harmful behavior. When the central model has no visibility into local training data, it's easy for adversarial participants to quietly poison the system.
+                        </div>
+                        <p>And these aren't just blatant attacks. Sometimes the danger is subtle—like <strong>semantic poisoning</strong>, where small textual changes mislead large language models into producing biased or incorrect answers.</p>
+                    </div>
+
+                    <!-- What Is TrustShield -->
+                    <div class="mb-5">
+                        <div class="subtitle">Solution</div>
+                        <h2 class="mb-4">What Is TrustShield?</h2>
+                        <div class="section-subtitle">An open-source framework for secure federated learning</div>
+                        <p class="lead">TrustShield is an open-source framework designed to defend federated AI systems from this exact threat.</p>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Validator Layer</h5>
+                                        <p class="card-text">Independent "referees" who evaluate each model update before it's added to the shared model.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Blockchain Consensus</h5>
+                                        <p class="card-text">Public notebook where no one can fake scores, ensuring transparency and accountability.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Zero-Knowledge Proofs</h5>
+                                        <p class="card-text">Show you got the right answer without revealing the test itself.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Together, this setup ensures that only trustworthy contributions shape the final model—without compromising privacy.</p>
+                    </div>
+
+                    <!-- Real-World Scenarios -->
+                    <div class="mb-5">
+                        <div class="subtitle">Case Studies</div>
+                        <h2 class="mb-4">Real-World Scenarios That Expose the Risks</h2>
+                        <div class="section-subtitle">Concrete examples of federated learning vulnerabilities</div>
+                        
+                        <div class="mb-4">
+                            <h4>Smart Keyboard Poisoning</h4>
+                            <p>Smartphones today use FL to train next-word prediction engines like Google's GBoard. Each user contributes to improving the model—without uploading any private text. But what happens when some users train their keyboards with malicious intent? They can steer predictions toward biased, offensive, or misleading suggestions. And because the central server never sees the raw inputs, it has no idea it's being manipulated.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4>Mislabeling in Collaborative Medical AI</h4>
+                            <p>Hospitals across different regions collaborate to build a powerful X-ray diagnostic model via FL. But if even one node injects mislabeled scans—say, misclassifying COVID cases as "normal"—the global model becomes dangerously unreliable. FL protects privacy, but at the cost of <strong>transparency and trust</strong>.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4>Legal LLM Trained on Private Case Notes</h4>
+                            <p>A consortium of law firms trains a legal language model using FL, keeping sensitive case data private. However, one participant subtly poisons the dataset by over-representing anti-plaintiff language. Over time, the model begins skewing summaries in favor of defendants. TrustShield's validators flag and filter these gradients before they corrupt the central model, preserving neutrality in downstream legal tools.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4>School District Chatbot for Student Mental Health</h4>
+                            <p>A coalition of public schools collaborates to train a privacy-safe mental health chatbot. But one district's outdated materials introduce stigmatizing views on gender and depression. Left unchecked, this would bias the chatbot's tone and advice. TrustShield detects and filters these poisoned updates using validator nodes anchored in carefully vetted psychological datasets—ensuring that the final model remains supportive and inclusive.</p>
+                        </div>
+                    </div>
+
+                    <!-- TrustShield for LLM Safety -->
+                    <div class="mb-5">
+                        <div class="subtitle">LLM Protection</div>
+                        <h2 class="mb-4">TrustShield for LLM Safety</h2>
+                        <div class="section-subtitle">Protecting large language models from semantic poisoning</div>
+                        <p>Large language models (LLMs) are increasingly trained in federated or decentralized environments. But LLMs introduce new vulnerabilities: <strong>subtle, semantic poisoning</strong> that distorts a model's grasp of truth, bias, and context.</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>TrustShield detects and filters:</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Redactions</strong> (e.g., removing key facts in QA)</li>
+                                    <li class="list-group-item"><strong>Falsification</strong> (e.g., replacing "Normandy is in France" with "Germany")</li>
+                                    <li class="list-group-item"><strong>Bias injection</strong> (e.g., associating male pronouns with intelligence-related skills)</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote class="blockquote bg-light p-4 rounded">
+                                    <p class="mb-0">In our SQuAD2.0 experiments, TrustShield blocked poisoned gradients that caused LLMs to give confidently wrong answers to fact-based questions. It preserved accuracy while maintaining fairness and factual integrity.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        
+                        <p>These attacks often evade traditional defenses—but fail against TrustShield's validator mechanism. Validators evaluate gradient updates on carefully vetted question-answering and classification datasets. Through this decentralized "truth layer," TrustShield identifies poisoned updates and blocks them from corrupting the central LLM.</p>
+                        <p>For builders of privacy-preserving chatbots, QA systems, or sensitive-domain summarizers, <strong>TrustShield provides the first federated line of defense at the semantic level.</strong></p>
+                    </div>
+
+                    <!-- How TrustShield Works -->
+                    <div class="mb-5">
+                        <div class="subtitle">Implementation</div>
+                        <h2 class="mb-4">How TrustShield Works (In 3 Steps)</h2>
+                        <div class="section-subtitle">Simple yet powerful protection mechanism</div>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">1. Gradient Collection</h5>
+                                        <p class="card-text">Each edge device trains locally and sends its model updates to the network.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">2. Validator Filtering</h5>
+                                        <p class="card-text">Validators test these updates on their private data and verify their performance using adaptive thresholds.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">3. Secure Aggregation</h5>
+                                        <p class="card-text">Only trusted updates, proven through zero-knowledge proofs (ZKPs), are aggregated by the cloud.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            <strong>This transforms a vulnerable FL system into a Byzantine Fault Tolerant network that resists even majority attacks.</strong>
+                        </div>
+                    </div>
+
+                    <!-- Why Blockchain -->
+                    <div class="mb-5">
+                        <div class="subtitle">Technology</div>
+                        <h2 class="mb-4">Why Blockchain? Why Now?</h2>
+                        <div class="section-subtitle">The technological foundation of TrustShield</div>
+                        <p><strong>TrustShield</strong> doesn't just defend. It transforms federated learning into an accountable, verifiable system.</p>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Immutability</h5>
+                                        <p class="card-text">Every validation step is logged and tamper-proof.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Smart Contracts</h5>
+                                        <p class="card-text">Enable token-based incentivization and automation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Proof-of-Useful-Work</h5>
+                                        <p class="card-text">Replaces wasteful crypto mining with real AI model training.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Together, these provide the foundation for <strong>Federated Learning as a Service (FLaaS)</strong>—a decentralized platform where data owners, model creators, and validators can safely collaborate with confidence.</p>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="mb-5">
+                        <div class="subtitle">Performance Results</div>
+                        <h2 class="mb-4">TrustShield in Numbers: How Much Better Is It?</h2>
+                        <div class="section-subtitle">Empirical validation against baseline methods</div>
+                        <p>We benchmarked TrustShield against the baseline (Vanilla FL) and ARFED using 50% adversarial nodes in both IID and Non-IID settings.</p>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th class="text-white">Dataset</th>
+                                        <th class="text-white">Vanilla FL Accuracy</th>
+                                        <th class="text-white">ARFED Accuracy</th>
+                                        <th class="text-white"><strong>TrustShield Accuracy</strong></th>
+                                        <th class="text-white">Improvement Over Vanilla</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-dark">MNIST</td>
+                                        <td class="text-dark">42%</td>
+                                        <td class="text-dark">68%</td>
+                                        <td class="text-dark"><strong>94%</strong></td>
+                                        <td class="text-dark"><strong>+52%</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-dark">CIFAR-10</td>
+                                        <td class="text-dark">31%</td>
+                                        <td class="text-dark">52%</td>
+                                        <td class="text-dark"><strong>71%</strong></td>
+                                        <td class="text-dark"><strong>+40%</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-dark">Chest X-ray</td>
+                                        <td class="text-dark">48%</td>
+                                        <td class="text-dark">61%</td>
+                                        <td class="text-dark"><strong>86%</strong></td>
+                                        <td class="text-dark"><strong>+38%</strong></td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <td class="text-dark"><strong>NLP (SQuAD2.0)</strong></td>
+                                        <td class="text-dark"><strong>46% (F1)</strong></td>
+                                        <td class="text-dark"><strong>58% (F1)</strong></td>
+                                        <td class="text-dark"><strong>81% (F1)</strong></td>
+                                        <td class="text-dark"><strong>+35%</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Non-IID setting improvements:</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">MNIST: +21%</li>
+                                    <li class="list-group-item">CIFAR-10: +56%</li>
+                                    <li class="list-group-item">Chest X-ray: +26%</li>
+                                    <li class="list-group-item">SQuAD2.0: +39%</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="alert alert-info" role="alert">
+                                    <em>Even with up to 70% adversarial nodes, TrustShield maintained learning stability and convergence—something baselines could not.</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="text-center mb-5">
+                        <div class="subtitle">Get Involved</div>
+                        <h2 class="mb-4">Join the TrustShield Community</h2>
+                        <div class="section-subtitle">Ways to contribute to secure federated learning</div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Download</h5>
+                                        <p class="card-text">Get the open-source repo and run your own validators</p>
+                                        <a href="#" class="custom-btn btn">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Consultation</h5>
+                                        <p class="card-text">Book a technical consult with our team for integration support</p>
+                                        <a href="index.html#section_5" class="custom-btn btn">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <div class="copyright-text-wrap">
+                        <p class="mb-0">
+                            <span class="copyright-text">Copyright © 2025 <a href="#">SkyThorn AI Labs</a> Company. All rights reserved.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html> 
