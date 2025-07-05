@@ -1265,23 +1265,18 @@ strong {
     cursor: pointer;
   }
 
-  /* Enhanced service cards for mobile interaction */
+  /* Enhanced service cards for mobile interaction - keeping original */
   .services-thumb {
-    transition: all 0.3s ease;
-    border-radius: var(--border-radius-medium);
-    overflow: hidden;
-    cursor: pointer;
+    transition: all ease 0.5s;
   }
 
   .services-thumb:active {
     transform: scale(0.98);
   }
 
-  /* Improved project cards touch interaction */
+  /* Improved project cards touch interaction - keeping original */
   .projects-thumb {
-    transition: all 0.3s ease;
-    border-radius: var(--border-radius-medium);
-    overflow: hidden;
+    transition: all ease 0.5s;
   }
 
   .projects-thumb:active {
@@ -1396,23 +1391,16 @@ strong {
     line-height: 1.2;
   }
 
-  /* Mobile service icon improvements */
+  /* Mobile service icon improvements - keeping original animations */
   .services-icon-wrap {
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(20, 183, 137, 0.1);
-    transition: all 0.3s ease;
+    width: 50%;
+    height: 55%;
+    transform: rotate(-35deg) translateY(55px);
+    transition: all ease 0.5s;
   }
 
   .services-thumb:hover .services-icon-wrap {
-    transform: scale(1.1);
-    background: var(--secondary-color);
+    transform: rotate(0) translateY(0);
   }
 }
 
@@ -1580,17 +1568,9 @@ strong {
     outline-offset: 2px;
   }
 
-  /* Mobile-specific hover states (for devices that support hover) */
+  /* Mobile-specific hover states - keeping original */
   @media (hover: hover) {
-    .services-thumb:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
-
-    .projects-thumb:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
+    /* Original hover effects maintained */
   }
 }
 
@@ -1651,10 +1631,10 @@ html, body {
   transition-duration: 0.01ms !important;
 }
 
-/* Mobile navbar scroll state */
+/* Mobile navbar scroll state - keeping transparent */
 .navbar.scrolled {
-  background: var(--white-color);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: transparent;
+  box-shadow: none;
 }
 
 .navbar.scrolled .navbar-brand,
@@ -1679,18 +1659,8 @@ html, body {
     box-shadow: 0 0 0 4px rgba(20, 183, 137, 0.1);
   }
   
-  /* Mobile-specific hover states (for devices that support hover) */
+  /* Mobile-specific hover states - keeping original */
   @media (hover: hover) {
-    .services-thumb:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
-    
-    .projects-thumb:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
-    
     .footer-menu-link:hover,
     .social-icon-link:hover {
       background: rgba(20, 183, 137, 0.1);

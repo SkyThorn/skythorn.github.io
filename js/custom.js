@@ -198,29 +198,8 @@
   // Mobile scroll optimizations
   function optimizeMobileScroll() {
     if (window.innerWidth <= 991) {
-      let ticking = false;
-      
-      function updateScroll() {
-        const scrolled = window.pageYOffset;
-        const navbar = document.querySelector('.navbar');
-        
-        if (scrolled > 100) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-        
-        ticking = false;
-      }
-      
-      function requestTick() {
-        if (!ticking) {
-          requestAnimationFrame(updateScroll);
-          ticking = true;
-        }
-      }
-      
-      window.addEventListener('scroll', requestTick, { passive: true });
+      // Keep navbar transparent - no scroll state changes
+      // This maintains the original transparent header behavior
     }
   }
 
