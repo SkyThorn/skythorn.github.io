@@ -257,15 +257,15 @@ strong {
   background: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--white-color);
-  color: var(--white-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
   padding: 8px 22px;
 }
 
 .navbar .custom-btn:hover {
-  background: var(--white-color);
+  background: var(--secondary-color);
   border-color: transparent;
-  color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .custom-btn {
@@ -362,7 +362,7 @@ strong {
 
 .navbar-brand,
 .navbar-brand:hover {
-  color: var(--white-color);
+  color: var(--dark-color);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -374,7 +374,7 @@ strong {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--white-color);
+  color: var(--p-color);
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
@@ -440,7 +440,7 @@ strong {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--white-color);
+  background: var(--dark-color);
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -456,7 +456,7 @@ strong {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--white-color);
+  background: var(--dark-color);
   width: 30px;
   height: 2px;
   content: '';
