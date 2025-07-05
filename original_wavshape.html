@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WavShape: It's Time Speech AI Stopped Judging Your Voice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.7; max-width: 800px; margin: 2em auto; padding: 0 1em; }
+    h1, h2, h3 { color: #333; }
+    pre { background: #f4f4f4; padding: 1em; overflow-x: auto; }
+    blockquote { font-style: italic; color: #555; border-left: 4px solid #ddd; padding-left: 1em; margin-left: 0; }
+    table { width: 100%; border-collapse: collapse; margin: 2em 0; }
+    th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
+    th { background-color: #f9f9f9; }
+  </style>
+</head>
+<body>
+
+<h1>It's Time Speech AI Stopped Judging Your Voice</h1>
+
+<p>“Can you say that again?”<br>
+“Sorry, I didn’t catch that.”</p>
+
+<p>For millions of people, these phrases are part of daily life—not from humans, but from voice assistants and AI-powered systems that fail to understand them.</p>
+
+<p>The reason? <strong>Bias in how speech AI listens.</strong> Most models are trained on dominant speech patterns—American English, male voices, standard accents. Everyone else is a statistical afterthought.</p>
+
+<h2>A Moment That Sparked a Mission</h2>
+
+<blockquote>
+  “I kept seeing how voice systems failed to understand people who didn’t fit the standard mold—whether because of their accent, age, or tone. These weren’t just isolated glitches; they were signals that AI was leaving entire groups behind.<br><br>
+  WavShape grew out of the belief that machines can do better—that they can learn to listen fairly, and forget responsibly.”<br>
+  — <strong>Oguzhan Baser</strong>, Founder of SkyThorn AI Labs
+</blockquote>
+
+<h2>The Problem: AI That Listens Too Closely</h2>
+
+<p>Today’s speech models—like Whisper or wav2vec—are incredibly powerful, but they <strong>over-listen</strong>. They extract:</p>
+<ul>
+  <li><strong>What you say</strong> (words, phonemes)</li>
+  <li><strong>How you say it</strong> (gender, accent, emotional state, age, regional identity)</li>
+</ul>
+
+<p>This leads to serious consequences:</p>
+<ul>
+  <li><strong>Bias propagation</strong>: AI favors standard voices, penalizes variation</li>
+  <li><strong>Privacy leakage</strong>: Even anonymized speech can expose identity</li>
+  <li><strong>Unequal access</strong>: Non-dominant voices get left behind</li>
+</ul>
+
+<p><strong>This isn’t just inconvenient—it’s discriminatory.</strong></p>
+
+<p><strong>Supporting Evidence:</strong></p>
+<ul>
+  <li>In a 2020 study, major ASR systems had nearly <strong>twice the word error rate for Black speakers</strong> vs. white speakers (<a href="https://www.pnas.org/doi/10.1073/pnas.1915768117">Koenecke et al.</a>).</li>
+  <li>A Stanford analysis found <strong>Scottish accents had 53% recognition accuracy</strong>, compared to 78% for Indian English (<a href="https://ssir.org/books/excerpts/entry/sounds_like_me">SSIR</a>).</li>
+  <li>NIH-backed research shows that marginalized speakers often <strong>change their natural voice</strong> just to be understood (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8664002/">PMC</a>).</li>
+</ul>
+
+<h2>Enter WavShape: A New Way to Hear</h2>
+
+<p>WavShape is our answer. It’s not just a model. It’s a <strong>mission-driven framework</strong> that transforms how machines listen—fairly, efficiently, and respectfully.</p>
+
+<p>We combine <strong>information theory</strong> with <strong>machine learning</strong> to:</p>
+<ul>
+  <li>Keep what matters for the task</li>
+  <li>Remove what could be biased or privacy-sensitive</li>
+  <li>Compress the rest for low-resource deployment</li>
+</ul>
+
+<p><strong>Think of it as a noise-canceling filter for bias.</strong></p>
+
+<h2>Who WavShape Is For</h2>
+
+<ul>
+  <li>AI teams building voice systems in regulated industries</li>
+  <li>Developers targeting multilingual or diverse user bases</li>
+  <li>Researchers needing control over embedding leakage and structure</li>
+</ul>
+
+<h2>How to Use WavShape (In 3 Simple Steps)</h2>
+
+<p>WavShape is easy to plug into your existing speech pipeline:</p>
+
+<ol>
+  <li><strong>Extract speech features</strong><br>Use a pre-trained model like Whisper to get audio embeddings.</li>
+  <li><strong>Pass through WavShape</strong><br>Feed those embeddings into our bias-filtering projection layer.</li>
+  <li><strong>Train with our smart loss</strong><br>We help you keep useful info while removing sensitive attributes using mutual information.</li>
+</ol>
+
+<p><strong>It works with any encoder.</strong> Just add a projection layer and our loss. That’s it.</p>
+
+<h2>Mid-Section Callback: The Vision Behind WavShape</h2>
+
+<blockquote>
+  WavShape wasn’t conceived as just a technical innovation—it was a response to a recurring failure in modern voice systems.<br><br>
+  Again and again, people who spoke differently were misunderstood or excluded. That failure revealed a design flaw, not just in models—but in how we define "understanding."<br><br>
+  WavShape is our way of rethinking that definition. Of giving voice AI a conscience, not just computation.
+</blockquote>
+
+<h2>How WavShape Compares</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Strengths</th>
+      <th>Weaknesses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adversarial Fairness</td>
+      <td>Learns invariance to bias</td>
+      <td>Hard to train, unpredictable outcomes</td>
+    </tr>
+    <tr>
+      <td>Differential Privacy (DP)</td>
+      <td>Provable guarantees</td>
+      <td>Adds noise, may degrade task utility</td>
+    </tr>
+    <tr>
+      <td><strong>WavShape (MI-based)</strong></td>
+      <td><strong>Controlled filtering, task-aware compression</strong></td>
+      <td>Requires MI estimation, tuning needed</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>It Works: Results That Speak</h2>
+
+<p><strong>Evaluated on Common Voice and VCTK:</strong></p>
+<ul>
+  <li>81% drop in sensitive mutual information (gender, accent)</li>
+  <li>97% retention of task-relevant features</li>
+  <li>38% lower AUROC for private attributes (i.e., harder to infer)</li>
+  <li>Visual embedding plots confirm reduced bias and privacy leakage</li>
+</ul>
+
+<h2>Let’s Build Listeners That Respect You</h2>
+
+<p>We’re not just training models anymore.<br>
+We’re training better listeners—ones that recognize your voice <strong>without making assumptions about who you are</strong>.</p>
+
+<p>Because the future of speech AI should be fair.<br>
+And it should sound like everyone.</p>
+
+<h2>Join Us</h2>
+
+<ul>
+  <li><strong>Developers</strong>: Integrate WavShape with your ASR pipeline → <a href="https://github.com/UTAustin-SwarmLab/WavShape">GitHub</a></li>
+  <li><strong>Enterprises</strong>: Book a bias audit or integration demo → <a href="/contact">Contact us</a></li>
+  <li><strong>Researchers</strong>: Collaborate on next-gen privacy and fairness → Reach out for papers or benchmarks</li>
+</ul>
+
+</body>
+</html>
