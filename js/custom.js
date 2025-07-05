@@ -34,37 +34,19 @@
 
   // ENHANCED MOBILE EXPERIENCE
 
-  // Mobile video optimization
+  // Mobile video optimization - simplified for faster loading
   function optimizeMobileVideo() {
     if (window.innerWidth <= 991) {
       const video = document.querySelector('#video-container video');
       if (video) {
-        // Add loading state
-        const videoContainer = document.querySelector('#video-container');
-        videoContainer.classList.add('video-loading');
-        
-        // Optimize video for mobile
+        // Only add essential mobile attributes
         video.setAttribute('playsinline', '');
         video.setAttribute('muted', '');
         video.setAttribute('autoplay', '');
         video.setAttribute('loop', '');
         
-        // Reduce video quality on mobile for better performance
-        if (window.innerWidth <= 480) {
-          video.style.filter = 'brightness(0.8) contrast(1.1)';
-        }
-        
-        // Handle video loading
-        video.addEventListener('loadeddata', function() {
-          videoContainer.classList.remove('video-loading');
-          videoContainer.classList.add('video-loaded');
-        });
-        
-        // Handle video errors
-        video.addEventListener('error', function() {
-          videoContainer.classList.remove('video-loading');
-          videoContainer.style.background = 'linear-gradient(45deg, #151415, #212323)';
-        });
+        // Remove any filters that might slow down rendering
+        video.style.filter = 'none';
       }
     }
   }
